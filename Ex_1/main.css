@@ -1,0 +1,146 @@
+:root {
+    --color-topo: #F7B733;
+    --color-body: #dfdfdf;
+    --color-botoes: #FC4A1A;
+    --color-article: #4ABDAC;
+}
+
+body {
+    background-color: var(--color-body);
+}
+
+.meinho {
+    margin: 0 auto;
+    height: fit-content;
+    width: 800px;
+    box-shadow: 5px 10px 8px #000000;
+    border-radius: 50px 50px 0 0;
+}
+
+.topBar {
+    width: 100%;
+    height: 100px;
+    border-radius: 50px 50px 0 0;
+    background-color: var(--color-topo);
+    position: relative;
+}
+
+.topBar>p {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 50%);
+    color: black;
+}
+
+nav {
+    width: 100%;
+    height: fit-content;
+    background-color: var(--color-article);
+}
+
+.aglBtnTop {
+    padding: 15px;
+}
+
+.btnTop {
+    background-color: var(--color-botoes);
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    margin: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.btnTop:hover {
+    transition: 1s;
+    background-color: #e05633;
+}
+
+.mainContent {
+    width: 100%;
+    background-color: var(--color-article);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+p.resultado {
+    width: fit-content;
+    padding: 10px;
+    background-color: #7a2e1b;
+    font-weight: bolder;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+table,
+td,
+th {
+    border: 1px solid black;
+    padding: 10px;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.tabelaCentro {
+    text-align: center;
+}
+
+.tabelaCentro>.tabela {
+    width: fit-content;
+    height: fit-content;
+    display: inline-block;
+}
+
+.tabela {
+    margin: 0 auto;
+    background-color: var(--color-body);
+}
+
+.margContent {
+    padding: 15px;
+}
+
+.buttons {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.button {
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    background-color: var(--color-botoes);
+    color: aliceblue;
+    border: none;
+    border-radius: 15px;
+}
+
+.button:hover {
+    transition: 1s;
+    background-color: #e05633;
+}
+
+footer {
+    background-color: var(--color-topo);
+    width: 100%;
+    height: 100px;
+}
