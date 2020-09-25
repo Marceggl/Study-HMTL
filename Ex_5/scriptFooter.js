@@ -22,6 +22,7 @@ function info() {
 
     while (price <= 0) {
         price = prompt("Digite o valor da compra");
+        price = parseFloat(price);
         if (price == null) {
             price = 1;
             return;
@@ -38,15 +39,16 @@ function info() {
         finalPrice = parseFloat(price - (price * 0.1));
         p.textContent = "Sua compra terá um desconto de 10% e sairá por R$" + finalPrice;
     } else if (code == 2) {
+        finalPrice = parseFloat(price + (price * 0.2));
         p.textContent = "Sua compra terá juros de 2% e sairá por R$" + finalPrice;
     } else if (code == 3) {
-        p.textContent = "Sua compra terá juros de 2% e sairá por R$" + finalPrice;
+        finalPrice = parseFloat(price + (price * 0.7));
+        p.textContent = "Sua compra terá juros de 7% e sairá por R$" + finalPrice;
     } else {
         secAtp = window.confirm("Você não digitou um código válido, deseja tentar de novo ? ＞︿＜");
         if (secAtp == true) {
             info();
         } else {
-
             canc();
         }
     }

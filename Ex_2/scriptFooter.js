@@ -13,7 +13,6 @@ function conf() {
     }
 }
 
-
 function info() {
     var num, veri;
     num = parseFloat(prompt("Digite um número"))
@@ -24,8 +23,10 @@ function info() {
         veri = num % 2;
         if (veri == 0) {
             p.textContent = "Seu número é par";
+            alert(num + " É par");
         } else {
             p.textContent = "Seu número é impar";
+            alert(num + " É impar");
         }
     }
 }

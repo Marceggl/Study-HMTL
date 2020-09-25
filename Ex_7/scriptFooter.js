@@ -30,21 +30,26 @@ function info() {
     sal = parseFloat(sal);
     if (sal <= 1434) {
         p.textContent = "Seu salário de R$" + sal + " esta Isento de alíquota";
+        alert("Seu salário de R$" + sal + " esta Isento de alíquota");
     } else if (sal > 1434 && sal <= 2150) {
         salDesc = sal - (sal * 0.75);
         p.textContent = "Seu salário de R$" + sal + " receberá uma alíquota de 7,5% virando R$" + salDesc;
+        alert("Seu salário de R$" + sal + " receberá uma alíquota de 7,5% virando R$" + salDesc);
     } else if (sal > 2150 && sal < 2866) {
         salDesc = sal - (sal * 0.15);
         salDesc = salDesc.toFixed((2));
         p.textContent = "Seu salário de R$" + sal + " receberá uma alíquota de 15% virando R$" + salDesc;
+        alert("Seu salário de R$" + sal + " receberá uma alíquota de 15% virando R$" + salDesc);
     } else if (sal > 2866 && sal < 3582) {
         salDesc = sal - (sal * 0.225);
         salDesc = salDesc.toFixed((2));
         p.textContent = "Seu salário de R$" + sal + " receberá uma alíquota de 22,5% virando R$" + salDesc;
+        alert("Seu salário de R$" + sal + " receberá uma alíquota de 22,5% virando R$" + salDesc);
     } else if (sal > 3582) {
         salDesc = sal - (sal * 0.275);
         salDesc = salDesc.toFixed((2));
-        p.textContent = "Seu salário de R$" + sal + " receberá uma alíquota de 28,5% virando R$" + salDesc;
+        p.textContent = "Seu salário de R$" + sal + " receberá uma alíquota de 27,5% virando R$" + salDesc;
+        alert("Seu salário de R$" + sal + " receberá uma alíquota de 27,5% virando R$" + salDesc);
     }
 
 

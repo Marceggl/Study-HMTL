@@ -13,7 +13,6 @@ function conf() {
     }
 }
 
-
 function info() {
     var purchPrice, numOfParcels, altPrice;
 
